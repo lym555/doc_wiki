@@ -6,11 +6,10 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'doc_wiki'
-copyright = '2022, lym'
+project = 'Cole‘s documentation'
+copyright = '2022, By LiuYuMin'
 author = 'lym'
-release = 'v1'
-
+release = 'v0.0.0.1'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
@@ -29,14 +28,14 @@ html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 # At the bottom of conf.py
 
-import recommonmark
-from recommonmark.transform import AutoStructify
+# import recommonmark
+# from recommonmark.transform import AutoStructify
 
-def setup(app):
-    app.add_config_value('recommonmark_config', {
-            'url_resolver': lambda url: github_doc_root + url,
-            'auto_toc_tree_section': 'Contents',
-            }, True)
-    app.add_transform(AutoStructify)
+# def setup(app):
+#     app.add_config_value('recommonmark_config', {
+#             'url_resolver': lambda url: github_doc_root + url,
+#             'auto_toc_tree_section': 'Contents',
+#             }, True)
+#     app.add_transform(AutoStructify)
 
 # At the bottom of conf.py
